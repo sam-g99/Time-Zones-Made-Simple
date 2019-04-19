@@ -232,7 +232,7 @@ footer{
 }
 /*VIEW EVENT*/
 .view-event-container{
-  width: 588px;
+  width: 420px;
   margin: 0 auto;
 }
 .event-time p{
@@ -251,7 +251,7 @@ footer{
   font-size: 2.7em;
 }
 .view-event-container select{
-  width:90%;
+  width:100%;
   max-width: 500px;
 }
 .view-event-container .select-container{
@@ -277,6 +277,19 @@ footer{
   }
   form{
     width:90%;
+  }
+  .event-time p:first-of-type{
+    font-size: 6.2em;
+  }
+  .view-event-container h2{
+    font-size: 2em;
+  }
+  .event-time p:nth-child(2){
+    font-size: 1.7em;
+  }
+  .view-event-container{
+    width:100%;
+    min-width: 390px;
   }
 }
 @media only screen and (max-width: 370px) {
