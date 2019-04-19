@@ -1,0 +1,331 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+body{
+  background-color: #FFF8F0;
+  display: flex;
+  width:100vw;
+  height:100vh;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+  min-height: 350px;
+  min-width: 388px;
+}
+a{
+  text-decoration: none;
+  color:gray;
+}
+nav{
+  position: absolute;
+  top:0;
+}
+.inputOptions{
+  height:0;
+  overflow: hidden;
+  position: absolute;
+}
+button{
+  cursor: pointer;
+  display: inline-block;
+  border:none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+button:focus{
+  outline:none;
+}
+.btn {
+  display: inline-block;
+  border:none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+select, input{
+  padding:.3em;
+  border: 2px #E0E0E0 solid;
+  background: white;
+}
+.create-title{
+  color: rgb(97, 97, 97);
+  font-size: 2.7em;
+  margin:0;
+  height:30px;
+}
+@media only screen and (max-width: 600px) {
+  .create-title{
+    font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .create-title{
+    font-size: 1.5em;
+  }
+}
+select{
+  width:100%;
+  height:50px;
+  color:#444444;
+  font-family: 'Rubik';
+  font-size: 1.3em;
+  display: inline-block;
+}
+label{
+  display: inline-block;
+}
+.time-zones{
+  width:100%;
+  margin:0;
+  font-family: sans-serif;
+}
+.error-404{
+  font-size: 8em;
+  font-weight: 300;
+  color: #FFACA0;
+  margin:0 auto;
+  margin-top:-100px;
+
+}
+.redirect{
+  color: #B2B2B2;
+  font-size: 3em;
+}
+input[type='text']{
+  height:50px;
+  font-size: 1.7em;
+}
+input[type='submit']{
+  height:50px;
+  font-size: 1.2em;
+  align-self: flex-end;
+  margin-bottom:10px;
+  background-color: #6C9EFF;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background .3s;
+  width: 100%;
+  margin-top: 10px;
+}
+input[type='submit']:hover{
+  background-color: rgb(82, 140, 255);
+}
+.input-row{
+  display: flex;
+}
+form{
+  width:80%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top:-3%;
+}
+
+.share-container{
+  margin:0 auto;
+  width:100vw;
+  margin-top:-100px;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  text-align: center;
+
+}
+.share-container h1{
+  color: #555;
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+.share-container button{
+  width:150px;
+  font-size: 2em;
+  margin: 0 auto;
+  border-radius: 5px;
+  height:50px;
+  line-height: 0px;
+  background-color: rgb(78, 78, 78);
+}
+.share-container a{
+  text-align: center;
+  margin-bottom:40px;
+  font-size: 1.8em;
+  color: rgb(81, 162, 255)
+}
+@media only screen and (max-width: 572px) {
+  .share-container a{
+    font-size: 4.8vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .share-container a{
+    font-size: 1em;
+  }
+}
+.select-container{
+  display: flex;
+  flex-flow: column;
+  margin:0px;
+  flex:1;
+}
+
+.select-container:first-child{
+  margin-right:10px;
+}
+.select-container:nth-child(2){
+  margin-right:10px;
+}
+.timezone-container:first-child{
+  width:100%;
+  margin:0;
+}
+.select-container, .timezone-container:first-child{
+  margin-top:5%;
+}
+select, input:focus{
+  outline:none;
+}
+footer{
+  position: absolute;
+  bottom:0;
+  width:100vw;
+}
+/*HOME*/
+.logo-home{
+  font-family: 'Raleway', sans-serif;
+  font-size: 8em;
+  font-weight: 300;
+  color: #FFACA0;
+  margin:0 auto;
+  margin-top:-100px;
+  min-width: 100px;
+
+}
+.event-button-home{
+  font-family: 'Raleway', sans-serif;
+  border-radius: 200px;
+  width: 250px;
+  height:65px;
+  font-size: 2em;
+  background-color: #C96E86;
+  margin: 0 auto;
+  align-self: center;
+  margin-top: 60px;
+  transition: background .3s;
+}
+.switch-wrapper {
+  position: relative;
+}
+ 
+
+.event-button-home:hover{
+  background-color: #e47d98;
+}
+/*VIEW EVENT*/
+.view-event-container{
+  width: 588px;
+  margin: 0 auto;
+}
+.event-time p{
+  display: inline-block;
+}
+.event-time p:first-of-type{
+  color: #6C9EFF;
+  font-size: 7em;
+}
+.event-time p:nth-child(2){
+  font-size: 2em;
+  color: #555;
+}
+.view-event-container h2{
+  color: #555;
+  font-size: 2.7em;
+}
+.view-event-container select{
+  width:90%;
+  max-width: 500px;
+}
+.view-event-container .select-container{
+  margin:0;
+  margin-top:10px;
+}
+/*HOME MEDIA*/
+
+
+@media only screen and (max-width: 1120px) {
+  .logo-home{
+    font-size: 10vw;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .logo-home{
+    font-size: 12vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .logo-home{
+    font-size: 3.7em;
+  }
+  form{
+    width:90%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .logo-home{
+    font-size: 2.7em;
+  }
+}
+@media only screen and (max-height: 603px) {
+  input[type='text']{
+    height:40px;
+    margin:0;
+    font-size: 1.3em;
+  }
+  input[type='submit']{
+    height:40px;
+  }
+  select{
+    height:45px;
+  }
+  .input-row{
+    display: flex;
+  }
+  .select-container, .timezone-container:first-child {
+    margin-top:10px;
+  }
+}
+
+
+/*Animation*/
+@keyframes buttonIn{
+  100%{
+      transform: translateY(20px);
+      opacity: 1;
+  }
+}
+.buttonin{
+  will-change: transform, opacity;
+  animation: buttonIn .5s  ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadein {
+  from{opacity:0}
+  to{opacity:1}
+}
+.fade-in{
+  animation: fadein .3s ease-in;
+  will-change: opacity;
+  animation-fill-mode: forwards;
+  animation-delay: .5s;
+  opacity: 0;
+}
