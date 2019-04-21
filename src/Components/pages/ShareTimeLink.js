@@ -23,7 +23,7 @@ export default class ShareTimeLink extends Component {
     <div className="share-container">
         <h1>Here's your event time link share it!</h1>
         <a  href={`${window.location.origin.toString()}/view/event/${this.props.match.params.timeData}`}>{window.location.origin.toString()}/{this.props.match.params.timeData}</a>
-        <textarea  style={{ opacity:'0',width:'0', overflow:'hidden',position: 'absolute',bottom:'0',right:'0',cursor:'default'}} ref={(textarea) => this.link = textarea} value={`${window.location.origin.toString()}${this.props.match.params.timeData}`}>
+        <textarea  style={{ opacity:'0',width:'0', overflow:'hidden',position: 'absolute',bottom:'0',right:'0',cursor:'default'}} ref={(textarea) => this.link = textarea} value={`${window.location.origin.toString()}/${this.props.match.params.timeData}`}>
        
           
         </textarea>
