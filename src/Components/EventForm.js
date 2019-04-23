@@ -43,10 +43,10 @@ class EventForm extends Component {
       }
     onChange = (e) => {
         if(e.target.name === "format" && this.state.hour > 12 || this.state.hour === 0){
-            this.setState({[e.target.name]: 1})
-        }else{
-            this.setState({[e.target.name]: e.target.value})
+            this.setState({hour: 1})
         }
+            this.setState({[e.target.name]: e.target.value})
+        
     };
   render() {
 
