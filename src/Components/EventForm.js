@@ -41,7 +41,13 @@ class EventForm extends Component {
         const timestamp = moment.tz(`${this.state.month}-${this.state.day}-${this.state.year} ${this.state.hour}:${this.state.minute} ${this.state.format}`,'MMMM-DD-Y H:m a', `${this.props.currentTimezone}`).format('X')
         this.props.history.push(`/share/${timestamp}`)
       }
-    onChange = (e) => {this.setState({[e.target.name]: e.target.value})};
+    onChange = (e) => {
+        if(e.target.name === "format" && this.state.hour > 12 || this.state.hour === 0){
+            this.setState({[e.target.name]: 1})
+        }else{
+            this.setState({[e.target.name]: e.target.value})
+        }
+    };
   render() {
 
     return (
