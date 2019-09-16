@@ -15,7 +15,7 @@ class App extends Component {
       <Router>
       <div className="App">
       <nav>
-      <Link to='/'>Home</Link><br></br>
+      <Link to='/'>Home</Link>
       <Link to='/create/event'>Create Link</Link>
       </nav>
       <Switch>
