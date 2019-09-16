@@ -16,8 +16,11 @@ body{
   min-width: 388px;
 }
 a{
-  text-decoration: none;
-  color:gray;
+   text-decoration: none;
+   color: #ffffff;
+   float: left;
+   margin-right: 10px;
+   font-weight: 600;
 }
 nav{
   position: absolute;
