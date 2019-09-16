@@ -1,5 +1,5 @@
 # Time-Zones-Made-Simple
-Create links that create links which automatically shows events in the users time. 
+Create links which automatically shows events in the users time. 
 
 ## View Live
 
