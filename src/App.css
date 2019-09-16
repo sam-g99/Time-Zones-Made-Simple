@@ -22,6 +22,10 @@ a{
 nav{
   position: absolute;
   top:0;
+      width: 100%;
+    background: #c96e86;
+    color: white;
+    padding: 10px;
 }
 .inputOptions{
   height:0;
